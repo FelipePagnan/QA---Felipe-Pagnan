@@ -61,9 +61,32 @@ input{
     border-radius: 6px;
     cursor: pointer;
 }
+.button-gerar{
+    width: 80px;
+    height: 20px;
+}
 /* Senhas */
+.senha{
+    display:block;
+}
 
+.senha > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.senha > input {
+    padding: 5px;
+    outline: none;
+}
+
+#btnGerar{
+    width: 80px;
+    height: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
 /* footer */
 footer {
     text-align: center;

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Inicio/favicon/favicon.ico" type="image/x-icon">
     <title>QA - Gerador de dados</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <!-- Nav-Bar -->
@@ -48,16 +49,39 @@
               <label for="cnpj">CNPJ</label>
               <input name="mascara" value="mascara" id="mascara" type="checkbox"> 
               <label for="mascara">Gerar com pontuação?</label><br /><br />
-              <input name="button" value="Gerar" onclick="gera()" type="button">
+              <input name="button" value="Gerar" onclick="gera()" type="button" class="button-gerar">
             </form>
         </section>
         <br><br>
+
         <!-- Senhas -->
         <section class="senha">
-
+            <h1>Gerador de senhas</h1>
+            <input id="inputPasswordId" type="text"  />
+    
+            <div>
+              <input id="inputLengthId" type="range" min="6" max="24"/>
+              <label for="inputLengthId"></label>
+            </div>
+            <div>
+              <input id="chkLowerId" type="checkbox" />
+              <label for="chkLowerId">Letras minúsculas</label>
+            </div>
+            <div>
+              <input id="chkUpperId" type="checkbox" />
+              <label for="chkUpperId">Letras maiúsculas</label>
+            </div>
+            <div>
+              <input id="chkNumberId" type="checkbox" />
+              <label for="chkNumberId">Números</label>
+            </div>
+            <div>
+              <input id="chkSymbolsId" type="checkbox" />
+              <label for="chkSymbolsId">Símbolos</label>
+            </div>
+        
+            <button id="btnGerar">Gerar</button>
         </section>
-
-
     </main>
     
     <footer>
