@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA - Gerador de dados</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <!-- Nav-Bar -->
+    <div class="container">
+        <div class="navbar-container">
+            <nav>
+                <ul class="navbar-items">
+                    <li>
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../Organograma/orgonograma.html">Organograma </a>
+                    </li>
+                    <li>
+                        <a href="../GeradorDeDados/geradorDeDados.html">Gerador de dados</a>
+                    </li>
+                    <li>
+                        <a href="../Creditos/creditos.html">Creditos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="main-banner">
+            <h1>Gerador de dados</h1>
+        </div>
+        
+        <!-- CPF E CNPJ -->
+        <section class="cpf-cnpj">
+            <h1>Gerador de CPF e CNPJ válidos</h1>
+            <form name="form_main">
+              <label for="numero">Número:</label> 
+              <input name="numero" id="numero" size="20" type="text" /><br />
+              Tipo:
+              <input name="tipo" value="cpf" id="cpf" checked="checked" type="radio"> 
+              <label for="cpf">CPF</label>
+              <input name="tipo" value="cnpj" id="cnpj" type="radio" /> 
+              <label for="cnpj">CNPJ</label>
+              <input name="mascara" value="mascara" id="mascara" type="checkbox"> 
+              <label for="mascara">Gerar com pontuação?</label><br /><br />
+              <input name="button" value="Gerar" onclick="gera()" type="button">
+            </form>
+        </section>
+        <br><br>
+        <!-- Senhas -->
+        <section class="senha">
+
+        </section>
+
+
+    </main>
+    
+    <footer>
+        <p>Felipe Pagnan @ 2023</p>
+    </footer>
+</body>
+</html>

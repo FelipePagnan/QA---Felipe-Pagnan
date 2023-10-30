@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA - Orgonograma</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Organograma/css/style.css">
+    <link rel="stylesheet" href="../Inicio/css/style.css">
+    <!-- JS -->
+    <script src="../Organograma/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Nav-Bar -->
+        <div class="container">
+            <div class="navbar-container">
+                <nav>
+                    <ul class="navbar-items">
+                        <li>
+                            <a href="/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="../Organograma/orgonograma.html">Organograma </a>
+                        </li>
+                        <li>
+                            <a href="../GeradorDeDados/geradorDeDados.html">Gerador de dados</a>
+                        </li>
+                        <li>
+                            <a href="../Creditos/creditos.html">Creditos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- <h1>Organograma</h1> -->        
+        <div id="search-container">
+            <h1>Orgonograma</h1><br>
+            <i class="bi bi-search"></i>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Busque por uma nota..."
+            />
+          </div>
+          <button id="export-notes">
+            Exportar CSV <i class="bi bi-download"></i>
+          </button>
+    </main>
+      <div id="add-note-container">
+        <input type="text" id="note-content" placeholder="O que deseja anotar?" />
+        <button class="add-note"><i class="bi bi-plus-lg"></i></button>
+      </div>
+      <div id="notes-container"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Felipe Pagnan @ 2023</p>
+    </footer>
+</body>
+</html>
